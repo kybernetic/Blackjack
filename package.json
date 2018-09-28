@@ -1,0 +1,26 @@
+{
+  "name": "gulp-scss",
+  "version": "1.0.0",
+  "description": "Gulp SASS starter template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Martin Podloucký",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-sass": "^4.0.1"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kybernetic/Blackjack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kybernetic/Blackjack/issues"
+  },
+  "homepage": "https://github.com/kybernetic/Blackjack#readme"
+}
