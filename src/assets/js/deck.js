@@ -11,7 +11,7 @@ function randint(min, max) {
 class Deck {
   constructor() {
     this.cards = [
-      new Card('ace', 'clubs', 1),
+      new Card('ace', 'clubs', 11),
       new Card('2', 'clubs', 2),
       new Card('3', 'clubs', 3),
       new Card('4', 'clubs', 4),
@@ -24,7 +24,7 @@ class Deck {
       new Card('jack', 'clubs', 10),
       new Card('queen', 'clubs', 10),
       new Card('king', 'clubs', 10),
-      new Card('ace', 'hearts', 1),
+      new Card('ace', 'hearts', 11),
       new Card('2', 'hearts', 2),
       new Card('3', 'hearts', 3),
       new Card('4', 'hearts', 4),
@@ -37,7 +37,7 @@ class Deck {
       new Card('jack', 'hearts', 10),
       new Card('queen', 'hearts', 10),
       new Card('king', 'hearts', 10),
-      new Card('ace', 'spades', 1),
+      new Card('ace', 'spades', 11),
       new Card('2', 'spades', 2),
       new Card('3', 'spades', 3),
       new Card('4', 'spades', 4),
@@ -50,7 +50,7 @@ class Deck {
       new Card('jack', 'spades', 10),
       new Card('queen', 'spades', 10),
       new Card('king', 'spades', 10),
-      new Card('ace', 'diamonds', 1),
+      new Card('ace', 'diamonds', 11),
       new Card('2', 'diamonds', 2),
       new Card('3', 'diamonds', 3),
       new Card('4', 'diamonds', 4),
@@ -76,5 +76,9 @@ class Deck {
       this.cards[i] = this.cards[j];
       this.cards[j] = swap;
     }
+  }
+
+  deal() {
+    return this.cards.pop();
   }
 }
